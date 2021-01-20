@@ -11,44 +11,26 @@ Olimpia Milano - Cantù | 55 - 60 -->
 
 
 <?php 
-    $matches = 
-    [
-        0 => [
+    $matches = [
+        [
             'homeTeam' => 'Los Angeles Lakers',
             'guest' => 'Huston Rockets',
             'homeTeamScore' => '2',
             'guestScore' => '5',
-
         ],
-        1 => [
+        [
             'homeTeam' => 'Boston Celtics',
             'guest' => 'Golden State Warriors',
             'homeTeamScore' => '6',
             'guestScore' => '8',
-
-        ],
-        2 => [
-            'homeTeam' => 'Chicago Bulls',
-            'guest' => 'Brooklyn Nets',
-            'homeTeamScore' => '1',
-            'guestScore' => '90',
-
-        ],
+        ]
     ];
-    // var_dump($matches);
-    for($i= 0; $i > count($maches); $i++) {
-        var_dump($maches[$i]);
-    };
+    
+    for ($i = 0; $i < count($matches);$i++) {
+        // var_dump($matches[$i]);
+        echo $matches[$i][homeTeam] . ' - ' . $matches[$i][guest] . ' | ' . $matches[$i][homeTeamScore] . ' - ' . $matches[$i][guestScore] . '<br>';
+        
+    }
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Php Snack 1</title>
-</head>
-<body>
-    
-</body>
-</html>
+
